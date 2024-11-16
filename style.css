@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+/* typography */
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+
+li,
+p,
+strong,
+h3,
+span,
+td {
+  font-family: "Outfit", sans-serif;
+}
+
+/* step 2 */
+/* this 100% max-width enables all the images applied to respect it's original parent */
+img {
+  max-width: 100%;
+}
+
+/* step 1 */
+/* the omelette--section is used to give max-width, margin-inline and padding to the section */
+/* mobile design */
+.omelette--section {
+  max-width: 45em;
+  margin-inline: auto;
+}
+
+/* desktop design */
+@media screen and (min-width: 700px) {
+  .omelette--section {
+    padding: 2rem;
+    margin-block: 4rem;
+    border-radius: 1rem;
+  }
+
+  /* border radius for the desktop image design */
+  img {
+    border-radius: 1rem;
+  }
+}
+
+.sub--headline--text {
+  color: hsl(30, 10%, 34%);
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+.omelette--content {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .omelette--content {
+    padding: 0;
+  }
+}
+/* preparation--time--section styling */
+.preparation--time--section {
+  background-color: hsl(330, 100%, 98%);
+}
+
+.preparation--time--section h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation--time--section li {
+  color: hsl(30, 10%, 34%);
+  text-indent: 1.5rem; /* text indent helps to space a text and number or bullet in an ordered or unordered list */
+}
+
+/* ::marker helps to target the list style ie the dots or numbers*/
+.preparation--time--section li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+/* ingedient section styling */
+.ingredient--section li {
+  color: hsl(30, 10%, 34%);
+  text-indent: 1.5rem; /* text indent helps to space a text and number or bullet in an ordered or unordered list */
+}
+
+/* ::marker helps to target the list style ie the dots or numbers*/
+.ingredient--section li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+/* instruction section styling */
+.instructrion--section li {
+  color: hsl(30, 10%, 34%);
+  /* text-indent: 0.5rem; */
+}
+
+.instructrion--section li::marker {
+  font-weight: 800;
+  color: hsl(332, 51%, 32%);
+}
+
+/* nutrition section styling */
+.nutrition--section p {
+  color: hsl(30, 10%, 34%);
+}
+
+.nutrition--section table {
+  width: 100%;
+}
+
+.nutrition--section strong {
+  color: hsl(332, 51%, 32%);
+}
+
+.nutrition--section td {
+  color: hsl(30, 10%, 34%);
+  padding: 1rem;
+  border-bottom: 1px solid rgb(213, 213, 213);
+}
